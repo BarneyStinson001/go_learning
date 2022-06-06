@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"go_learning/src/ch2/205packageuse"
+	 "go_learning/src/gopl/ch2/205packageuse"
 	"os"
 	"strconv"
 )

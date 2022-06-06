@@ -1,0 +1,60 @@
+
+###03历史背景、发展现状、语言特性
+简单、高效、生产力、云计算语言
+###04 第一个go程序
+
+package main 
+main函数
+文件名不一定是main.go
+
+退出返回值
+os.Exit(0)
+
+命令行参数
+os.Args()
+
+###05变量常量和其他语言的差异
+>大师错的次数比初学者尝试的次数还多
+
+测试程序：源码文件 _test.go
+测试方法名以Test开头
+
+位运算
+
+```
+a:=1
+a&Readable==Readable,a&Writavle==Writavle,a&Executable==Executable
+```
+###06数据类型
+
+byte  alias uint8  
+rune  alias unit32  unicode code point码点
+不能显式类型转换
+
+指针类型：不支持运算
+
+字符串初始化为空值
+
+###07运算符
+算术运算符
+比较运算符
+    ==
+    数组比较   个数不一不能比较
+位运算符
+    & | ^ 
+    <<(*2的n次) >>（除2的n次）
+    &^按位置零  右边的为1,就清零 
+###08条件和循环
+循环只有for
+
+if var declaration;condition{
+abs
+}else if condition {
+def
+}else{
+efg
+}
+   数据截取：不支持-1
+   slice切片内部结构： 结构体
+        ptr  len  cap 造成大量gc
+        
