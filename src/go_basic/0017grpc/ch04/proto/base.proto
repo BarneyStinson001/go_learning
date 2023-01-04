@@ -1,0 +1,14 @@
+
+syntax = "proto3";
+option go_package = "./;proto";//路径和包名
+
+import "google/protobuf/empty.proto";
+
+//helloworld,goods共用
+
+message Empty{
+}
+ 
+message Pong{
+    string id = 1 ;
+}

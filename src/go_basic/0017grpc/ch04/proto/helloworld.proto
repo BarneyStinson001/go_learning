@@ -1,0 +1,35 @@
+
+syntax = "proto3";
+
+import "base.proto";
+import "google/protobuf/empty.proto";
+option go_package = "./;proto";//路径和包名
+
+// The greeting service definition.
+service Greeter {
+    // Sends a greeting
+    rpc SayHello (HelloRequest) returns (HelloReply) {};
+    rpc Ping(google.protobuf.Empty) returns (Pong);
+}
+
+
+
+// The request message containing the user's name.
+message HelloRequest {
+    string name = 1;
+}
+
+// The response message containing the greetings
+message HelloReply {
+    string message = 1;
+}
+
+
+message Request {
+    string  id = 1;
+    message Result {
+        string name = 1;
+        string url = 2;
+    }
+    repeated Result data = 2;
+}

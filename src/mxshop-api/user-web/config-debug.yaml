@@ -1,0 +1,20 @@
+name: 'user-web'
+host: '192.168.18.179'
+tags: ['user','web','go456']
+port: 8021
+user_srv:
+#  host: '127.0.0.1'#健康检查需要，
+  host: '192.168.18.179'
+  port: 50051
+  name: 'user-srv'
+jwt:
+  key: 'j*bhEqtMXKhku4a4'
+sms:
+  width: 6
+redis:
+  host: '192.168.18.160'
+  port: 6379
+  expire: 300
+consul:
+  host: "192.168.18.160"
+  port: 8500

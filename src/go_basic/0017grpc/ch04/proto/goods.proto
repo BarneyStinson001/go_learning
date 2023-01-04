@@ -1,0 +1,8 @@
+
+syntax = "proto3";
+import "base.proto";
+option go_package = "./;proto";//路径和包名
+//和helloworld共用Ping
+service Greeter{
+    rpc Ping(Empty) returns (Pong);
+}

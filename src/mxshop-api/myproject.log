@@ -1,0 +1,4 @@
+{"level":"info","ts":1658758937.9229612,"caller":"zap_test/main.go:21","msg":"failed to fetch URL","url":"https://imooc.com","attempt":3}
+{"level":"info","ts":1658758937.9229612,"caller":"zap_test/main.go:26","msg":"Failed to fetch URL: https://imooc.com"}
+{"level":"info","ts":1658759021.169851,"caller":"zap_test/main.go:22","msg":"failed to fetch URL","url":"https://imooc.com","attempt":3}
+{"level":"info","ts":1658759021.169851,"caller":"zap_test/main.go:27","msg":"Failed to fetch URL: https://imooc.com"}

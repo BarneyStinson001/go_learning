@@ -1,0 +1,19 @@
+{
+    "host":"192.168.18.179",
+    "name":"order-web",
+    "port":8022,
+    "tags":["mxshop","order","web"],
+    "goods_srv":{
+        "name":"goods-srv"
+    },
+    "order_srv":{
+        "name":"order-srv"
+    },
+    "jwt":{
+        "key":""
+    },
+    "consul":{
+        "host":"192.168.18.160",
+        "port":8500
+    }
+}

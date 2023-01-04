@@ -1,0 +1,107 @@
+syntax = "proto3";
+import "google/protobuf/empty.proto";
+option go_package = "./;proto";
+
+
+
+service Order{
+    //购物车
+    rpc CartItemList(UserInfo) returns(CartItemListRsp);//获取用户的购物车信息
+    rpc CreateCartItem(CartItemReq) returns(ShopCartInfoRsp);//把商品加入购物车
+    rpc UpdateCartItem(CartItemReq) returns(google.protobuf.Empty);//更新购物车中的商品，数量或者勾选
+    rpc DeleteCartItem(CartItemReq) returns(google.protobuf.Empty);//删除
+
+    //订单
+    rpc CreateOrder(OrderReq) returns(OrderInfoRsp);//创建订单
+    rpc OrderList(OrderFilterReq) returns(OrderListRsp);//订单列表，可查询
+    rpc OrderDetail(OrderReq) returns(OrderDetailRsp);//订单详情 。不能只用OrderInfoRsp
+    rpc UpdateOrderStatus(OrderStatus) returns(google.protobuf.Empty);//订单状态修改
+
+
+}
+
+
+message  UserInfo{
+    int32 id = 1;
+}
+
+message CartItemReq{
+    int32 id =1;
+    int32 userId = 2;
+    int32 goodsId = 3;
+    int32 nums = 4;
+    bool checked = 5;
+    //不带价格，因为可能是过去加的购物车，今天去看购物车，价格需要是当前最新的。
+}
+
+message OrderReq{
+    int32 id = 1;//订单肯定是生成的，为了查询复用这个
+    int32 userId= 2;
+    string address = 3;
+    string name = 4;
+    string mobile = 5;
+    string post = 6;
+
+}
+
+message  OrderFilterReq{
+    int32 userId = 1;
+    int32 pages = 2;
+    int32  numsPerPage =3;
+
+}
+
+message OrderStatus{
+    int32  id = 1; //商品id
+    string orderSn =2;//支付宝编号
+    string status =3;
+}
+
+message ShopCartInfoRsp{
+    int32 id =1;
+    int32 userId = 2;
+    int32 goodsId = 3;
+    int32 nums = 4;
+    bool checked = 5;
+}
+
+message CartItemListRsp{
+    int32 total = 1;
+    repeated  ShopCartInfoRsp  data =2 ;
+}
+
+message OrderInfoRsp{
+    int32 id = 1;
+    int32 userId = 2;
+    string orderSn = 3;
+    string payType = 4;
+    string status = 5;
+    string post = 6;
+    float total = 7;
+    string address = 8;
+    string name = 9;
+    string mobile = 10;
+    string addTime = 11;
+}
+
+message OrderListRsp{
+    int32 total =1;
+    repeated OrderInfoRsp data =2;
+}
+
+message  OrderItemRsp{
+    int32  id = 1;
+    int32  orderId =2 ;
+    int32 goodsId = 3 ;
+    string  goodsName =4;
+    string  goodsImage  =5;
+    float goodsPrice = 6;
+    int32 nums =7;
+
+}
+
+message OrderDetailRsp{
+    OrderInfoRsp orderInfo = 1;//订单基本信息
+    repeated OrderItemRsp goods = 2;//商品信息
+}
+

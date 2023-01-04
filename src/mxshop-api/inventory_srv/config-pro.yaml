@@ -1,0 +1,7 @@
+host: '192.168.18.160'
+port: 8848
+namespace: 'a2625cd9-fc88-4513-9b2b-eb66201c6768'
+user: 'nacos'
+password: 'nacos'
+dataid: 'inventory.json'
+group: 'dev'

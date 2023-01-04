@@ -1,0 +1,24 @@
+syntax = "proto3";
+import "google/protobuf/empty.proto";
+option go_package = "./;proto";
+
+service Inventory{
+    //新建商品、//事务，分布式  跨服务
+    rpc SetInv(GoodsInvInfo) returns(google.protobuf.Empty);//设置库存
+    rpc InvDetail(GoodsInvInfo) returns(GoodsInvInfo);//获取库存
+    rpc Sell(SellInfo)returns(google.protobuf.Empty);//销售  预扣减
+        //一般是传过来订单，订单有多个商品，不批量清理，一个个来影响性能，而且影响事务
+//    扣减和归还是后面分布式的重点
+    rpc Reback(SellInfo) returns(google.protobuf.Empty);//超时归还
+}
+
+
+
+message GoodsInvInfo{
+    int32 goodsId = 1;
+    int32 num = 2;
+}
+
+message SellInfo {
+    repeated GoodsInvInfo goodsInvInfo= 1;
+}

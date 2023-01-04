@@ -1,0 +1,66 @@
+2022-10-27T00:05:35.818+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2022-10-27T00:05:37.822+0800	[31mERROR[0m	nacos_server/nacos_server.go:194	api</v1/cs/configs>,method:<GET>, params:<{"dataId":"goods-srv.json","group":"dev","tenant":"89cdf9b9-aac2-40df-920c-113fc42d85d4"}>, call domain error:<Get "http://127.0.0.1:8848/nacos/v1/cs/configs?dataId=goods-srv.json&group=dev&tenant=89cdf9b9-aac2-40df-920c-113fc42d85d4": dial tcp 127.0.0.1:8848: connectex: No connection could be made because the target machine actively refused it.> , result:<>
+2022-10-27T00:05:39.825+0800	[31mERROR[0m	nacos_server/nacos_server.go:194	api</v1/cs/configs>,method:<GET>, params:<{"dataId":"goods-srv.json","group":"dev","tenant":"89cdf9b9-aac2-40df-920c-113fc42d85d4"}>, call domain error:<Get "http://127.0.0.1:8848/nacos/v1/cs/configs?dataId=goods-srv.json&group=dev&tenant=89cdf9b9-aac2-40df-920c-113fc42d85d4": dial tcp 127.0.0.1:8848: connectex: No connection could be made because the target machine actively refused it.> , result:<>
+2022-10-27T00:05:41.827+0800	[31mERROR[0m	nacos_server/nacos_server.go:194	api</v1/cs/configs>,method:<GET>, params:<{"dataId":"goods-srv.json","group":"dev","tenant":"89cdf9b9-aac2-40df-920c-113fc42d85d4"}>, call domain error:<Get "http://127.0.0.1:8848/nacos/v1/cs/configs?dataId=goods-srv.json&group=dev&tenant=89cdf9b9-aac2-40df-920c-113fc42d85d4": dial tcp 127.0.0.1:8848: connectex: No connection could be made because the target machine actively refused it.> , result:<>
+2022-10-27T00:05:41.827+0800	[31mERROR[0m	config_client/config_client.go:202	get config from server error:Get "http://127.0.0.1:8848/nacos/v1/cs/configs?dataId=goods-srv.json&group=dev&tenant=89cdf9b9-aac2-40df-920c-113fc42d85d4": dial tcp 127.0.0.1:8848: connectex: No connection could be made because the target machine actively refused it. 
+2022-10-27T00:05:41.827+0800	[31mERROR[0m	config_client/config_client.go:216	get config from cache  error:failed to read config cache file:tmp/nacos/cache\config\goods-srv.json@@dev@@89cdf9b9-aac2-40df-920c-113fc42d85d4,err:open tmp/nacos/cache\config\goods-srv.json@@dev@@89cdf9b9-aac2-40df-920c-113fc42d85d4: The system cannot find the path specified.  
+2022-10-27T00:07:45.850+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2022-10-27T00:07:45.856+0800	[31mERROR[0m	nacos_server/nacos_server.go:194	api</v1/cs/configs>,method:<GET>, params:<{"dataId":"inventory-srv.json","group":"dev","tenant":"a2625cd9-fc88-4513-9b2b-eb66201c6768"}>, call domain error:<[404] config data not exist
+> , result:<config data not exist
+>
+2022-10-27T00:07:45.857+0800	[31mERROR[0m	nacos_server/nacos_server.go:194	api</v1/cs/configs>,method:<GET>, params:<{"dataId":"inventory-srv.json","group":"dev","tenant":"a2625cd9-fc88-4513-9b2b-eb66201c6768"}>, call domain error:<[404] config data not exist
+> , result:<config data not exist
+>
+2022-10-27T00:07:45.859+0800	[31mERROR[0m	nacos_server/nacos_server.go:194	api</v1/cs/configs>,method:<GET>, params:<{"dataId":"inventory-srv.json","group":"dev","tenant":"a2625cd9-fc88-4513-9b2b-eb66201c6768"}>, call domain error:<[404] config data not exist
+> , result:<config data not exist
+>
+2022-10-27T00:07:45.859+0800	[31mERROR[0m	config_client/config_client.go:202	get config from server error:[404] config data not exist
+ 
+2022-10-27T00:07:45.859+0800	[33mWARN[0m	config_client/config_client.go:207	[client.GetConfig] config not found, dataId: inventory-srv.json, group: dev, namespaceId: a2625cd9-fc88-4513-9b2b-eb66201c6768.
+2022-10-27T00:08:58.713+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2022-10-27T00:08:58.718+0800	[31mERROR[0m	nacos_server/nacos_server.go:194	api</v1/cs/configs>,method:<GET>, params:<{"dataId":"inventory-srv.json","group":"dev","tenant":"a2625cd9-fc88-4513-9b2b-eb66201c6768"}>, call domain error:<[404] config data not exist
+> , result:<config data not exist
+>
+2022-10-27T00:08:58.720+0800	[31mERROR[0m	nacos_server/nacos_server.go:194	api</v1/cs/configs>,method:<GET>, params:<{"dataId":"inventory-srv.json","group":"dev","tenant":"a2625cd9-fc88-4513-9b2b-eb66201c6768"}>, call domain error:<[404] config data not exist
+> , result:<config data not exist
+>
+2022-10-27T00:08:58.722+0800	[31mERROR[0m	nacos_server/nacos_server.go:194	api</v1/cs/configs>,method:<GET>, params:<{"dataId":"inventory-srv.json","group":"dev","tenant":"a2625cd9-fc88-4513-9b2b-eb66201c6768"}>, call domain error:<[404] config data not exist
+> , result:<config data not exist
+>
+2022-10-27T00:08:58.722+0800	[31mERROR[0m	config_client/config_client.go:202	get config from server error:[404] config data not exist
+ 
+2022-10-27T00:08:58.723+0800	[33mWARN[0m	config_client/config_client.go:207	[client.GetConfig] config not found, dataId: inventory-srv.json, group: dev, namespaceId: a2625cd9-fc88-4513-9b2b-eb66201c6768.
+2022-10-27T00:11:17.937+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2022-10-27T00:16:29.419+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2022-10-27T00:22:28.931+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2022-10-27T00:24:08.912+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2022-10-27T00:30:31.494+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2022-10-27T00:33:01.250+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2022-10-27T00:38:34.643+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2022-11-03T22:16:36.256+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2022-11-03T23:15:40.403+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2022-11-03T23:17:23.344+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2022-11-03T23:17:40.762+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2022-11-03T23:18:24.730+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2022-11-03T23:18:33.117+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2022-11-05T20:35:49.061+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2022-11-05T20:39:07.843+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2022-11-05T20:40:22.016+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2022-11-05T21:42:33.679+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2022-11-05T21:52:58.566+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2022-11-09T21:36:34.173+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2022-11-30T20:27:08.316+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2022-11-30T20:27:13.323+0800	[31mERROR[0m	nacos_server/nacos_server.go:194	api</v1/cs/configs>,method:<GET>, params:<{"dataId":"order_srv.json","group":"dev","tenant":"f1885fd4-9e06-4963-8978-7d19992d2423"}>, call domain error:<Get "http://192.168.18.160:8848/nacos/v1/cs/configs?dataId=order_srv.json&group=dev&tenant=f1885fd4-9e06-4963-8978-7d19992d2423": dial tcp 192.168.18.160:8848: i/o timeout (Client.Timeout exceeded while awaiting headers)> , result:<>
+2022-11-30T20:27:18.336+0800	[31mERROR[0m	nacos_server/nacos_server.go:194	api</v1/cs/configs>,method:<GET>, params:<{"dataId":"order_srv.json","group":"dev","tenant":"f1885fd4-9e06-4963-8978-7d19992d2423"}>, call domain error:<Get "http://192.168.18.160:8848/nacos/v1/cs/configs?dataId=order_srv.json&group=dev&tenant=f1885fd4-9e06-4963-8978-7d19992d2423": context deadline exceeded (Client.Timeout exceeded while awaiting headers)> , result:<>
+2022-11-30T20:27:23.353+0800	[31mERROR[0m	nacos_server/nacos_server.go:194	api</v1/cs/configs>,method:<GET>, params:<{"dataId":"order_srv.json","group":"dev","tenant":"f1885fd4-9e06-4963-8978-7d19992d2423"}>, call domain error:<Get "http://192.168.18.160:8848/nacos/v1/cs/configs?dataId=order_srv.json&group=dev&tenant=f1885fd4-9e06-4963-8978-7d19992d2423": context deadline exceeded (Client.Timeout exceeded while awaiting headers)> , result:<>
+2022-11-30T20:27:23.353+0800	[31mERROR[0m	config_client/config_client.go:202	get config from server error:Get "http://192.168.18.160:8848/nacos/v1/cs/configs?dataId=order_srv.json&group=dev&tenant=f1885fd4-9e06-4963-8978-7d19992d2423": context deadline exceeded (Client.Timeout exceeded while awaiting headers) 
+2022-12-03T21:43:59.266+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2022-12-03T21:48:03.499+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2022-12-03T22:27:50.093+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2022-12-03T22:41:58.940+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2022-12-03T22:43:42.011+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2022-12-03T22:52:54.762+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2022-12-03T22:53:51.826+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2022-12-03T22:59:52.911+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2022-12-03T23:00:52.561+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2022-12-04T23:36:02.419+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
